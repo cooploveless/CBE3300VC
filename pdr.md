@@ -46,13 +46,14 @@ $$
 \mathrm{ZnSO_4(aq) \rightarrow Zn^{2+}(aq) + SO_4^{2-}(aq)}
 $$
 
-Here, **Zn²⁺** is the target contaminant ion that we aim to remove.
+Here, **Zn²⁺ is the target contaminant ion** that we aim to remove.
 
 Sulfate can participate in an acid–base equilibrium that can shift solution acidity:
 
 $$
 \mathrm{SO_4^{2-} + H_2O \rightleftharpoons HSO_4^- + OH^-}
 $$
+
 
 While the contaminant is defined by the dissolved ionic species (Zn²⁺ and sulfate), this equilibrium introduces a secondary effect: if pH drifts during filtration, it can influence (i) adsorption behavior via carbon surface charge and (ii) conductivity readings via changes in ionic speciation and surface chemistry. For this reason, we will perform periodic pH checks to confirm the solution remains within the expected range.
 ### 2.3 Point of Zero Charge
