@@ -1,7 +1,15 @@
 # Preliminary Design Repor
 
-[Go to Filter section](#filter)
+[Go to Introduction section](#introduction)
+[Go to Filter and Analyte section](#filter)
+[Go to Sensor System (TDS) section](#TDS)
+[Go to System Overview section](#system)
+[Go to Parts List section](#parts)
+[Go to Potential Design Additions section](#additions)
+[Go to References section](#references)
 
+
+<a id="introduction"></a>
 ## 1. Introduction and Project Relevance
 Access to safe drinking water remains a persistent public health and infrastructure challenge. Dissolved heavy metals are especially concerning because they can enter water supplies through industrial discharges, mining runoff, and pipe corrosion. Even at low concentrations, metal ions can accumulate over time and pose long-term health and environmental risks, making low-cost, reliable purification strategies important.
 
@@ -71,7 +79,7 @@ We will use Marineland Black Diamond Premium Activated Carbon (22 oz) as the ads
 - Designed for aqueous applications, indicating suitability for continuous water contact
 - High-surface-area activated carbon makes it a practical, low-cost adsorption medium for dissolved species in a recirculating purifier
 
-
+<a id="TDS"></a>
 ## 3. Sensor System: TDS (Conductivity) Meter
 
 ### 3.1 Purpose and role
@@ -107,6 +115,7 @@ This curve provides an estimate of concentration and a stop threshold.
 
 - **Non-specific measurement:** EC/TDS tracks total ionic content, not Zn²⁺ specifically. In our model system this is acceptable because ZnSO₄ is the dominant added salt, but the signal can still be influenced by carbon leaching or pH-driven effects.
 
+<a id="system"></a>
 ## 4. System Overview
 ### 4.1 Design
 
@@ -129,6 +138,7 @@ Introduction of bubbles into the filter is a major risk to the integrity of the 
 100 TDS measurements will be taken every second and averaged. This average will be sent to the Arduino and compared to a predetermined threshold of 5mg/mL, in line with EPA’s recommendation. Measurements are averaged to reduce noise and additional measurements may be added if needed. 
 Similarly, the bubble detector uses a predetermined threshold IR absorbance value to indicate when a bubble is present. This is established during control runs. It will have to be calculated if the concentration of zinc sulfate has any effect on this absorbance. However, we hypothesize that any impact will not be significant. The bubble detector takes 1000 measurements every second and the Arduino uses its average. 
 
+<a id="parts"></a>
 ## 5. Parts List
 ### 5.1 Circuitry
 - [ ] Arduino Microcontroller  
@@ -166,6 +176,7 @@ Similarly, the bubble detector uses a predetermined threshold IR absorbance valu
 - [ ] [Silicone tubing (2 mm ID)](#)  
 - [ ] [12V power adapter](#)
 
+<a id="additions"></a>
 ## 6. Potential Design Additions
 ### 6.1 pH Monitoring
 As aforementioned, the analyte, zinc sulfate, undergoes an acid-base reaction in solution. This results in the production of a strong acid which the filter should be able to eliminate. Therefore, monitoring the presence of this acid may be another way to analyze filter purification. If time permits and the TDS sensor is functioning, we plan to look into this additional monitoring technique.
@@ -173,4 +184,6 @@ We will begin by using pH paper to intermediably check for the solution’s pH. 
 
 ### 6.2 Analyte
 We plan on using zinc sulfate because of its low price and previous success for a similar project. However, we are also interested if our design will work with other heavy metals and dissolved solids. We would like to expand on our design using copper, manganese, and salt solutions. We would also be interested if our design purifies and detects water contaminated with multiple times of solids (salt and metal mixtures). 
+
+<a id="references"></a>
 ## 7. References
