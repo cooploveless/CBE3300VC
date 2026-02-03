@@ -1,11 +1,17 @@
 # Preliminary Design Repor
 
 [Go to Introduction section](#introduction)
+
 [Go to Filter and Analyte section](#filter)
+
 [Go to Sensor System (TDS) section](#TDS)
+
 [Go to System Overview section](#system)
+
 [Go to Parts List section](#parts)
+
 [Go to Potential Design Additions section](#additions)
+
 [Go to References section](#references)
 
 
