@@ -7,8 +7,8 @@ Access to safe drinking water remains a persistent public health and infrastruct
 
 In this project, we are designing a small-scale “adaptive” water purifier that removes dissolved zinc ions from water and uses real-time sensing to determine when purification is complete. We chose zinc sulfate in deionized water as a model system since it isolates zinc removal from the confounding background ions present in tap water, enabling clearer performance evaluation. We selected an adsorption-based approach using activated carbon because it is inexpensive, scalable, and compatible with a recirculating design: water can pass through the filter multiple times until readings indicate improvement. Rather than purchasing a commercial cartridge, we will fabricate our own activated-carbon filter media and housing to optimize adsorption performance and better understand the design tradeoffs. For continuous feedback and threshold-based control, we will monitor purification progress with a TDS (conductivity) meter. In addition, we will perform periodic secondary pH checks with indicator strips to verify that the solution's acidity remains within the expected range. If pH variability proves to be a significant driver of performance or measurement noise, we may integrate an in-line pH probe to enable continuous pH logging. 
 
-
-## 2. Introduction to Activated Carbon Filter and Zinc Analyte {:#filter}
+<a id="filter"></a>
+## 2. Introduction to Activated Carbon Filter and Zinc Analyte
 ### 2.1 Design Objectives and Performance Targets
 
 In this project, we will remove dissolved zinc from water using an adsorption-based activated-carbon filter operated in a recirculating loop, while monitoring purification progress using conductivity (TDS) measurements.
