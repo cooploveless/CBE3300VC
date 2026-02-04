@@ -1,3 +1,8 @@
+---
+layout: default
+title: Market Research and GANTT Timeline
+---
+
 # Market Research and GANTT Timeline
 
 [Go to Market Research](#market)
@@ -12,7 +17,7 @@
 # 1. Market Research
 
 ### 1.1 Ideal product and target user
-A countertop drinking-water purifier that combines activated-carbon adsorption with an adaptive control loop based on real-time conductivity and pH checks. Made for households that want drinking-water assurance without installation.  [oai_citation:1‡Preliminary Design Report_ Adaptive Water Purifier.pdf](sediment://file_0000000098cc71f7b052045539a77efd)
+A countertop drinking-water purifier that combines activated-carbon adsorption with an adaptive control loop based on real-time conductivity and pH checks. Made for households that want drinking-water assurance without installation.
 
 ### 1.2 Market trends
 The at-home drinking water filtration market is growing, driven by consumer concern about contaminants and demand for more convenient point-of-use (POU) systems.
@@ -29,7 +34,7 @@ The at-home drinking water filtration market is growing, driven by consumer conc
 | Aquasana | Countertop-powered filter | Microplastics, lead, cysts, chlorine, mercury, PFOA, PFOS, VOCs | $399.99 |
 | APEC | Under-sink RO | Chlorine, fluoride, arsenic, lead, chromium | $230.99 |
 
-**Notes:** Pitchers are low-cost but typically non-instrumented, relying on cartridge-lifetime assumptions. Higher-end countertop/RO systems can have stronger performance claims but cost more and may require installation.  [oai_citation:6‡Preliminary Design Report_ Adaptive Water Purifier.pdf](sediment://file_0000000098cc71f7b052045539a77efd)
+**Notes:** Pitchers are low-cost but typically non-instrumented, relying on cartridge-lifetime assumptions. Higher-end countertop/RO systems can have stronger performance claims but cost more and may require installation. 
 
 ### 1.4 Pricing (project bill of materials)
 
