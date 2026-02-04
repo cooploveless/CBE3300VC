@@ -7,7 +7,7 @@ Our project is a **water purification system** to eliminate trace partical conta
   Preliminary Design Report
 </a>  
 
-<a href="Gantt_MarketResearch.md" style="display:inline-block;padding:10px 14px;border:1px solid #ccc;border-radius:8px;text-decoration:none;">
+<a href="Gantt_MarketResearch.html" style="display:inline-block;padding:10px 14px;border:1px solid #ccc;border-radius:8px;text-decoration:none;">
   Market Research and GANTT Timeline
 </a>
 
