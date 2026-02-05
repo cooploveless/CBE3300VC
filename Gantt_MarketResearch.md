@@ -1,8 +1,3 @@
----
-layout: default
-title: Market Research and GANTT Timeline
----
-
 # Market Research and GANTT Timeline
 
 [Go to Market Research](#market)
@@ -55,6 +50,7 @@ The at-home drinking water filtration market is growing, driven by consumer conc
 | **Total** | **$197** |
 
 #### Additional items
+
 | Additional item | Cost |
 |---|---:|
 | Arduino controller | $25 |
