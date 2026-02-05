@@ -124,24 +124,23 @@ This curve provides an estimate of concentration and a stop threshold.
 
 <a id="system"></a>
 ## 4. System Overview
-### 4.1 Design
 
-### 4.2 Filter Design
+### 4.1 Filter Design
 
 As mentioned, our filter will be made up of activated carbon, a common compound used for industrial water purification. Our filter will be self-made, taking design inspiration from column chromatography packing strategies. Our filter casing is a plastic 30mL fast protein liquid chromatography column. This was chosen because the inlet allows for a luer lock connection, enabling pressurization of the system by the parastalic pump. The activated carbon will be grinded up using a mortar and pestle to increase surface area and homogenize the size of the solid. To avoid the compound contaminating the water, a filter will be added at the bottom of the column. We will be testing both a larger mesh and low micron membrane to optimize purification while mitigating the need for high pressure or low flow rate. 
 
 The column will be pre wet before each run with DI water. The outlet will run into a reservoir to enable larger volumes of water to be continuously filtered. 
 
-### 4.3 Continuous Purification Monitoring
+### 4.2 Continuous Purification Monitoring
 The TDS meter will be placed at the bottom of the filter outlet’s reservoir to ensure it is always submerged. Experimentation will be done to determine the need for mixing and placement of the meter. Additional monitoring instruments may be implemented if needed outlined in section 6.
 
-### 4.4 Pump Housing
+### 4.3 Pump Housing
 A custom housing for the pump, circuit, and battery will be designed in AutoCad and 3D printed. The pump will be controlled using an Arduino and powered by a 12V battery. The Arduino will be tuned to turn off the pump at a specific TDS reading. All circuitry will be in this housing and designed in a way that is accessible for maintenance and potential additions to the design.
 
-### 4.5 Bubble Detection and Mitigation
+### 4.4 Bubble Detection and Mitigation
 Introduction of bubbles into the filter is a major risk to the integrity of the design. A bubble would introduce increased pressure to the filter and may result in fouling or bursting of the secondary filter. This bubble would most likely come from either a hole in the tubing or from a reservoir if the flow rate is too fast or there is not enough water in the system. We plan to reduce the risk of a bubble forming by these methods through our design and operating procedures. However, an additional IR LED bubble detector will be placed in-line with the pump. If the detector, designed in a similar way as a colorimeter, notes the presence of the bubble, a visible LED will activate and the pump will stop. Additional safety mitigation measures will be discussed as we have a better idea of the operating pressures, flow rates, and design constraints. 
 
-### 4.6 Control Mechanisms
+### 4.5 Control Mechanisms
 100 TDS measurements will be taken every second and averaged. This average will be sent to the Arduino and compared to a predetermined threshold of 5mg/mL, in line with EPA’s recommendation. Measurements are averaged to reduce noise and additional measurements may be added if needed. 
 Similarly, the bubble detector uses a predetermined threshold IR absorbance value to indicate when a bubble is present. This is established during control runs. It will have to be calculated if the concentration of zinc sulfate has any effect on this absorbance. However, we hypothesize that any impact will not be significant. The bubble detector takes 1000 measurements every second and the Arduino uses its average. 
 
