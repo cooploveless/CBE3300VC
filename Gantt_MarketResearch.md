@@ -26,6 +26,7 @@ The at-home drinking water filtration market is growing, driven by consumer conc
 - **Global POU:** $31.90B (2024) → $53.56B (2030), ~9.2% CAGR (Grand View Research)
 
 ### 1.3 Competitive landscape
+
 | Brand | Filter type | Target removal | Price |
 |------|-------------|----------------|------:|
 | Brita | Pitcher (activated carbon blend) | Lead, chlorine, cadmium, mercury, class I particulates, asbestos, benzene | $41.99 |
@@ -39,6 +40,7 @@ The at-home drinking water filtration market is growing, driven by consumer conc
 ### 1.4 Pricing (project bill of materials)
 
 #### Purchased items (assumed costs)
+
 | Purchased Item | Cost |
 |---|---:|
 | TDS meter | $12 |
