@@ -97,6 +97,10 @@ The at-home drinking water filtration market is growing, driven by consumer conc
 <a id="gantt"></a>
 ## 2.GANTT Chart
 
+[![Gantt Chart](assets/gantt.png)](https://penno365-my.sharepoint.com/:x:/g/personal/clov_upenn_edu/IQDdv_JKPAcoRI9zU8REIblJAVjyT01BERbfhOXnsotJhqw?e=s16CbP)
+
+[Figure 1: GANTT Chart (Click to See Live Updates) ](https://penno365-my.sharepoint.com/:x:/g/personal/clov_upenn_edu/IQDdv_JKPAcoRI9zU8REIblJAVjyT01BERbfhOXnsotJhqw?e=s16CbP)
+
 <a id="references"></a>
 ## 3.References
 1. U.S. Point of Use Water Treatment Systems Market Size, Share & Industry Analysis, By Product Type (Under The Counter Filters, Counter Top Filters, Pitcher Filters, Faucet-mounted Filters, and Others), By Category (RO Filters, UV Filters, Gravity Filters, and Others), By Application (Residential and Light Commercial), and Country Forecast, 2024–2032.” Fortune Business Insights, 19 Jan. 2026, https://www.fortunebusinessinsights.com/u-s-point-of-use-water-treatment-systems-market-110045. Accessed 4 Feb. 2026.
