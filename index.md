@@ -11,6 +11,6 @@ Our project is a **water purification system** to eliminate trace partical conta
   Market Research and GANTT Timeline
 </a>
 
-<a href="preliminary_design.html" style="display:inline-block;padding:10px 14px;border:1px solid #ccc;border-radius:8px;text-decoration:none;">
-  Preliminary Design
+<a href="preliminary_prototype.html" style="display:inline-block;padding:10px 14px;border:1px solid #ccc;border-radius:8px;text-decoration:none;">
+  Preliminary Prototype
 </a>
