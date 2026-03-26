@@ -2,4 +2,4 @@
 
 Content coming soon.
 
-![Alt text](assets/antt_prelimdesign.png)
+![Alt text](assets/gantt_prelimdesign.png)
