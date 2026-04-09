@@ -98,11 +98,11 @@ We conducted a study to analyze how many times the column needs to be rinsed pri
 
 We concluded that the column should be rinsed with 120 mL of water prior to filtering. Despite this, we ran a few preliminary runs and were having significant pump resistance. We were also having poor filtration, so we disassembled the column and found a thick buildup of carbon slurry on the outlet filter. Photos of the slurry and filter are shown below. We believe this is because the column terminated with a 0.22 μm filter, which only filters out very small carbon particles — larger small pieces accumulate at the filter and form a thick layer.
 
-![Carbon Slurry](/CBE3300VC/assets/carbon_slurry.png)
+<img src="/CBE3300VC/assets/carbon_slurry.png" alt="Carbon Slurry" width="350">
 
 *Figure 4: Carbon slurry buildup on glove.*
 
-![Filter Contamination](/CBE3300VC/assets/filter_contamination.png)
+<img src="/CBE3300VC/assets/filter_contamination.png" alt="Filter Contamination" width="350">
 
 *Figure 5: Outlet 0.22 μm filter contamination.*
 
