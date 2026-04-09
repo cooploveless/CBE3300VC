@@ -67,19 +67,19 @@ To calculate the flow rate of the column, we filled the column with water and pu
 
 ### 5.1 Circuit Schematic
 
-![Circuit Schematic](/YOUR-REPO-NAME/assets/circuit_schematic.png)
+![Circuit Schematic](/CBE3300VC/assets/circuit_schematic.png)
 
 *Figure 1: Circuit schematic showing Arduino, relay, 12V pump, and TDS sensor connections.*
 
 ### 5.2 Overall System Flow Diagram
 
-![System Flow Diagram](/YOUR-REPO-NAME/assets/system_flow_diagram.png)
+![System Flow Diagram](/CBE3300VC/assets/system_flow_diagram.png)
 
 *Figure 2: Overall system flow diagram.*
 
 ### 5.3 Column Cross Section
 
-![Column Cross Section](/YOUR-REPO-NAME/assets/column_cross_section.png)
+![Column Cross Section](/CBE3300VC/assets/column_cross_section.png)
 
 *Figure 3: Column cross section showing luer lock, 0.22 μm filters, and activated carbon pellets.*
 
@@ -98,11 +98,11 @@ We conducted a study to analyze how many times the column needs to be rinsed pri
 
 We concluded that the column should be rinsed with 120 mL of water prior to filtering. Despite this, we ran a few preliminary runs and were having significant pump resistance. We were also having poor filtration, so we disassembled the column and found a thick buildup of carbon slurry on the outlet filter. Photos of the slurry and filter are shown below. We believe this is because the column terminated with a 0.22 μm filter, which only filters out very small carbon particles — larger small pieces accumulate at the filter and form a thick layer.
 
-![Carbon Slurry](/YOUR-REPO-NAME/assets/carbon_slurry.png)
+![Carbon Slurry](/CBE3300VC/assets/carbon_slurry.png)
 
 *Figure 4: Carbon slurry buildup on glove.*
 
-![Filter Contamination](/YOUR-REPO-NAME/assets/filter_contamination.png)
+![Filter Contamination](/CBE3300VC/assets/filter_contamination.png)
 
 *Figure 5: Outlet 0.22 μm filter contamination.*
 
@@ -113,7 +113,7 @@ To mitigate this, we are planning on passing approximately 400 mL of DI water th
 
 We completed a trial run using a new filter following our refined preparation specifications. The system was loaded with 200 mL of 2000 ppm Zn²⁺ solution. Our TDS shutoff threshold (digital value of 240) corresponds to a Zn²⁺ concentration of 500 ppm. The pump was turned off prematurely as it overheated. The data collected is graphed below as a function of time.
 
-![TDS Trial Run Graph](/YOUR-REPO-NAME/assets/tds_trial_run.png)
+![TDS Trial Run Graph](/CBE3300VC/assets/tds_trial_run.png)
 
 *Figure 6: TDS digital reading over time with 2000 ppm Zn²⁺ load.*
 
@@ -122,7 +122,7 @@ There is an obvious drop-off in purification as time elapses. It appears that pu
 <a id="gantt"></a>
 ## 8. Updated GANTT Chart
 
-[![Updated Gantt Chart](/YOUR-REPO-NAME/assets/gantt_updated.png)](https://penno365-my.sharepoint.com/:x:/g/personal/clov_upenn_edu/IQDdv_JKPAcoRI9zU8REIblJAVjyT01BERbfhOXnsotJhqw?e=s16CbP)
+[![Updated Gantt Chart](/CBE3300VC/assets/gantt_updated.png)](https://penno365-my.sharepoint.com/:x:/g/personal/clov_upenn_edu/IQDdv_JKPAcoRI9zU8REIblJAVjyT01BERbfhOXnsotJhqw?e=s16CbP)
 
 *Figure 7: Updated GANTT Chart (Click to See Live Updates)*
 
