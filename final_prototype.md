@@ -2,8 +2,6 @@
 
 > An adaptive, low-cost point-of-use water purifier that responds to real-time water quality using conductivity-based TDS monitoring and activated carbon adsorption.
 
-<!-- IMAGE: Hero/banner image of the assembled device or the title slide from the presentation -->
-
 ---
 
 ## Overview
@@ -15,8 +13,6 @@ Zinc-ing is a point-of-use (POU) water purification system designed to remove di
 ## Market Context
 
 Point-of-use water treatment is one of the fastest-growing segments in the global water industry.
-
-<!-- IMAGE: Bar chart from the presentation showing U.S. POU market ($4.31B in 2023 → $7.55B in 2032) and Global POU market ($31.90B in 2024 → $53.56B in 2030) -->
 
 | Market | 2023/2024 | 2030/2032 |
 |--------|-----------|-----------|
@@ -39,7 +35,7 @@ Existing consumer POU filters address a range of contaminants at widely varying 
 | Aquasana | Countertop powered filter | Microplastics, lead, cysts, chlorine, PFOA/PFOS, VOCs | $399.99 |
 | APEC | Under-sink RO | Chlorine, fluoride, arsenic, lead, chromium | $230.99 |
 
-**Our differentiation:** Zinc-ing targets zinc specifically using a custom affinity chromatography-style packed column with adaptive shut-off — eliminating the over-filtering and unnecessary filter replacements that plague time-based conventional systems.
+**What makes our project special:** Zinc-ing targets zinc specifically using a custom affinity chromatography-style packed column with adaptive shut-off — eliminating the over-filtering and unnecessary filter replacements that plague time-based conventional systems.
 
 ---
 
@@ -54,8 +50,6 @@ Zinc ions (Zn²⁺) are removed by binding to oxygen-containing surface function
 
 Our zinc source — zinc sulfate heptahydrate (ZnSO₄·7H₂O) — dissociates into Zn²⁺ and SO₄²⁻ in solution. Because sulfate is not as strongly adsorbed onto carbon, it can persist in solution and maintain a higher background TDS reading even as zinc is removed. This is an important consideration when interpreting conductivity measurements.
 
-<!-- IMAGE: Diagram or schematic showing Zn²⁺ binding to R-COOH surface groups on activated carbon -->
-
 **Key activated carbon properties used:**
 - Low cost and widely available
 - High surface area with abundant adsorption sites
@@ -67,14 +61,15 @@ Our zinc source — zinc sulfate heptahydrate (ZnSO₄·7H₂O) — dissociates 
 
 Rather than replacing filters on a fixed schedule, Zinc-ing monitors water quality in real time using a TDS (Total Dissolved Solids) sensor that estimates contamination via electrical conductivity.
 
-<!-- IMAGE: Circuit schematic — Arduino controlling relay and peristaltic pump via TDS sensor analog signal -->
+![Circuit Schematic](/CBE3300VC/assets/circuit_schematic.png)
 
+*Figure 1: Circuit schematic.*
 The sensing and control architecture:
 
 1. The TDS sensor outputs an analog voltage proportional to the solution's conductivity.
 2. The Arduino reads this voltage through its ADC (analog-to-digital converter).
-3. Raw ADC values are logged and mapped to estimated ZnSO₄ concentration using a calibration curve built from prepared standards.
-4. When the measured TDS drops below the target shut-off threshold (385 digital output units), the Arduino cuts power to the peristaltic pump via a relay.
+3. 100 raw ADC values are averaged, logged, and compared to the setpoint.
+4. When the measured TDS drops below the target setpoint \ (385 digital output units), the Arduino cuts power to the peristaltic pump via the relay.
 
 This approach eliminates unnecessary filter cycling and extends usable filter life compared to systems that operate on fixed timers.
 
@@ -82,9 +77,9 @@ This approach eliminates unnecessary filter cycling and extends usable filter li
 
 ## Device Design
 
-<!-- IMAGE: Hand-drawn system schematic showing the recirculating loop: hold tank → pump → column → TDS sensor → back to hold tank -->
+![Column Cross Section](/CBE3300VC/assets/column_cross_section.png)
 
-<!-- IMAGE: Cross-section sketch of the packed column showing: Luer lock inlet, 0.22 µm filter, activated carbon pellet bed, 0.22 µm outlet filter, and effluent port -->
+*Figure 2: Column cross section.*
 
 ### Flow System
 
@@ -108,19 +103,9 @@ The column uses an affinity chromatography-inspired packing strategy, allowing f
 
 50 g of activated carbon was selected to balance adsorption capacity with acceptable flow rate.
 
-### Circuit
-
-<!-- IMAGE: Full circuit diagram — Arduino (digital + analog + power pins), relay module, 12V battery → peristaltic pump, TDS sensor powered by +5V with analog output to Arduino ADC -->
-
-The control circuit connects:
-- **Arduino** reads the TDS sensor analog voltage and controls a digital output pin.
-- **Relay module** receives the digital signal from the Arduino and switches the 12V pump circuit on/off.
-- **Peristaltic pump** is powered by a 12V supply through the relay.
-- **TDS sensor** is powered by the Arduino's +5V rail with ground shared through the circuit.
-
 ---
 
-## Bill of Materials
+## Cost of Device
 
 **Primary components:**
 
@@ -152,18 +137,22 @@ The control circuit connects:
 
 ## Column Rinse Analysis
 
-Before processing contaminated water, the packed carbon column is rinsed with DI water to remove leached carbon fines and stabilize baseline TDS.
+Before processing contaminated water, the packed carbon column is rinsed with DI water to remove the likehood of leached carbon.
 
-<!-- IMAGE: TDS vs. rinse volume plot showing declining TDS as 200 mL of DI water is recirculated — target shut-off shown at digital output = 385 -->
+![Column Rinse Procuedre](/CBE3300VC/assets/rinse.png)
+*Figure 6: Technique used to pre-rinse column.*
+
+We then looked at how carbon after pre-rinse may leach into our water sample.
 
 **Method:** After packing, 200 mL of DI water was recirculated through the column while TDS was continuously measured in the hold container.
+
+![Water Contamination](/CBE3300VC/assets/water_contamination.png)
+*Figure 7: Contaminated water run.*
 
 **Findings:**
 - Carbon leaching does not significantly elevate TDS measurements under normal operating conditions.
 - A short rinse (~100 mL) before use is sufficient to stabilize baseline conductivity.
 - Target shut-off digital output: **385**
-
-<!-- IMAGE: Photo or diagram of the carbon rinse procedure setup -->
 
 ---
 
@@ -198,8 +187,16 @@ The filter became ineffective earlier than the theoretical prediction. Several m
 ---
 
 ## Experimental Results
+Here are a few of the results from the purification runs we completed.
 
-<!-- IMAGE: "TDS Digital Output vs Time (Trial 1)" scatter plot — shows TDS dropping sharply from ~418 to ~395 in the first ~2 minutes, then declining gradually to ~385 over ~12.5 minutes total -->
+![Trial 1](/CBE3300VC/assets/trial1.png)
+*Figure 3: TDS digital output vs. time — Trial 1.*
+
+![Trial 2](/CBE3300VC/assets/trial2.png)
+*Figure 4: TDS digital output vs. time — Trial 2.*
+
+![Trial 3](/CBE3300VC/assets/trial3.png)
+*Figure 5: TDS digital output vs. time — Trial 3.*
 
 The TDS digital output shows two distinct regimes:
 
@@ -212,7 +209,8 @@ The adaptive shut-off successfully terminates the pump at the target output, dem
 
 ## Arduino Housing
 
-<!-- IMAGE: Photo or CAD rendering of the Arduino enclosure / housing used to mount and protect the electronics -->
+![Arduino Housing](/CBE3300VC/assets/housing.png)
+*Figure 9: Arduino and circuit housing.*
 
 The Arduino controller is housed in a custom enclosure designed to protect the electronics from water exposure. Foam padding was added to mitigate pump vibration and reduce noise during operation.
 
