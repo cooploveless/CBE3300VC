@@ -142,6 +142,22 @@ Before processing contaminated water, the packed carbon column is rinsed with DI
 ![Column Rinse Procuedre](/CBE3300VC/assets/rinse.png)
 *Figure 6: Technique used to pre-rinse column.*
 
+We conducted a study to analyze how many times the column needs to be rinsed prior to use to eliminate carbon contamination in the circulated water. 30 mL of DI water was passed through the column, the eluent collected, and TDS measured. Note that a TDS digital reading of 470 corresponds to 2000 ppm Zn²⁺ and a value of 240 corresponds to 500 ppm.
+
+| Total Volume Rinsed (mL) | Digital TDS Output |
+|:---:|:---:|
+| 30 | 375 |
+| 60 | 115 |
+| 90 | 38.2 |
+| 120 | 32 |
+| 150 | 29 |
+
+We concluded that the column should be rinsed with 120 mL of water prior to filtering. Despite this, we ran a few preliminary runs and were having significant pump resistance. We were also having poor filtration, so we disassembled the column and found a thick buildup of carbon slurry on the outlet filter. Photos of the slurry and filter are shown below. We believe this is because the column terminated with a 0.22 μm filter, which only filters out very small carbon particles — larger small pieces accumulate at the filter and form a thick layer.
+
+To mitigate this, we are planning on passing approximately 200 mL of DI water through a 150 mesh filter to remove larger carbon particles during manufacturing. The column is then loaded and the user rinses it with 120 mL of water prior to use.
+
+<a id="trial"></a>
+
 We then looked at how carbon after pre-rinse may leach into our water sample.
 
 **Method:** After packing, 200 mL of DI water was recirculated through the column while TDS was continuously measured in the hold container.
