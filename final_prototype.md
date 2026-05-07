@@ -258,5 +258,42 @@ Zinc-ing demonstrates initial promise as an adaptive, low-cost point-of-use zinc
 
 ## Final GANNT Chart
 
+const int TDS_PIN = A1;
+const int PUMP_PIN = A2;
+const int NUM_SAMPLES = 20;
+const int SAMPLE_INTERVAL_MS = 50;
+const float RAW_SHUTOFF = 0;
+
+void setup() { 
+  Serial.begin(9600);
+  pinMode(PUMP_PIN, OUTPUT);
+  digitalWrite(PUMP_PIN, LOW);  // start with pump ON
+}
+
+void loop() {
+  long sum = 0;
+  for (int i = 0; i < NUM_SAMPLES; i++) {
+    sum += analogRead(TDS_PIN);
+    delay(SAMPLE_INTERVAL_MS);
+  }
+
+  float avgRaw = sum / (float)NUM_SAMPLES;
+
+  // Pump control
+  if (avgRaw <= RAW_SHUTOFF) {
+    digitalWrite(PUMP_PIN, HIGH);  // pump OFF
+  } else {
+    digitalWrite(PUMP_PIN, LOW);   // pump ON
+  }
+Serial.println(avgRaw); // for Serial Plotter
+  Serial.print("Avg Raw: "); Serial.print(avgRaw, 1);
+  Serial.print("  Pump: ");
+  Serial.println(avgRaw <= RAW_SHUTOFF ? "OFF" : "ON");
+}
+
+---
+
+## Final GANNT Chart
+
 ![Updated GANTT Chart](/CBE3300VC/assets/gantt_final.png)
 *Figure 8: Updated GANTT chart.*
