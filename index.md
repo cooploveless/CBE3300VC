@@ -19,6 +19,11 @@ Our project is a **water purification system** to eliminate trace partical conta
   Intermediate Prototype
 </a>
 
+a href="MVP.html" style="display:inline-block;padding:10px 14px;border:1px solid #ccc;border-radius:8px;text-decoration:none;">
+  Minimum Viable Product
+</a>
+
+
 <a href="final_prototype.html" style="display:inline-block;padding:10px 14px;border:1px solid #ccc;border-radius:8px;text-decoration:none;">
   Final Prototype
 </a>
