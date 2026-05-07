@@ -256,4 +256,7 @@ Zinc-ing demonstrates initial promise as an adaptive, low-cost point-of-use zinc
 
 ---
 
-*CBE 3300: Water Purification — University of Pennsylvania, School of Engineering and Applied Science*
+## Final GANNT Chart
+
+![Updated GANTT Chart](/CBE3300VC/assets/gantt_final.png)
+*Figure 8: Updated GANTT chart.*
