@@ -8,6 +8,8 @@
 
 [Go to Next Steps section](#next)
 
+[Go to Next Steps section](#GanntMVP)
+
 ---
 
 <a id="rinse"></a>
@@ -68,4 +70,10 @@ Our primary focus going forward is refining the housing. This includes improving
 
 ---
 
-*CBE 3300: Water Purification — University of Pennsylvania, School of Engineering and Applied Science*
+<a id="GanntMVP"></a>
+## 2. Updated GANNT Chart
+
+![Updated GANTT Chart](/CBE3300VC/assets/gantt_final.png)
+*Figure 8: Updated GANTT chart.*
+
+
