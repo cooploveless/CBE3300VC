@@ -18,3 +18,7 @@ Our project is a **water purification system** to eliminate trace partical conta
 <a href="intermediate_prototype.html" style="display:inline-block;padding:10px 14px;border:1px solid #ccc;border-radius:8px;text-decoration:none;">
   Intermediate Prototype
 </a>
+
+<a href="final_prototype.html" style="display:inline-block;padding:10px 14px;border:1px solid #ccc;border-radius:8px;text-decoration:none;">
+  Final Prototype
+</a>
